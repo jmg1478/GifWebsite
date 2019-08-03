@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body background="assets/GT.jpg">
+    <title>Giphy Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <div id="app"></div>
+</head>
+
+<body background="assets/GT.jpg">
+    <div id="app"></div>
     <script src="java/script.js">
-        </script>
-        <label>search gifs</label><br/>
-        <input id="searchGifs" type="text" name="searchGifs"></input>
-    <button name="submit" onClick="searchGifs();">Search</button>
-    
+    </script>
+    <h3>Search Gifs Below!</h3>
+    <input id="searchGifs" type="text" name="searchGifs"></input>
+    <button class="btn btn-dark" name="submit" onClick="searchGifs();">Search</button>
+
     <div>
-    Search history:<br/>
-    <div id="previousGifSearches">
-    <ul id="searchHistory">
-    
-    </ul>
+        <h4>Search History:</h4><br />
+        <div id="previousGifSearches">
+            <ul id="searchHistory">
+
+            </ul>
+        </div>
     </div>
-    </div>
+
     <div id="gifs" style="margin:50px;"></div>
+
 </body>
+
 </html>
