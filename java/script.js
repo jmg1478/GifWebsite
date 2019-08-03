@@ -16,7 +16,7 @@ function setGifs(searchVal) {
 		}
 		console.log(`going to start a search for: ${searchVal}`);
 	
-		fetch(`https://api.giphy.com/v1/gifs/search?q=${encodeURI(searchVal)}&api_key=${GIPHY_API_KEY}&limit=5`)
+		fetch(`https://api.giphy.com/v1/gifs/search?q=${encodeURI(searchVal)}&api_key=${GIPHY_API_KEY}&limit=10`)
 		.then(resp => resp.json())
 		.then(data => {
 			const gifs = data.data;
